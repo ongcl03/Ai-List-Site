@@ -1,0 +1,62 @@
+Large Langauge Model (Chat)
+- ChatGPT (OpenAI), https://chat.openai.com/ 
+- Bing AI/Copilot (Microsoft), https://copilot.microsoft.com/
+- Gemini (Google), https://gemini.google.com/app
+- Claude Chat (Anthropic), https://claude.ai/chats
+- Poe (Poe), https://poe.com/
+- Phind (Phind), https://phind.com/
+- Perplexity AI (Perplexity), https://perplexity.ai/
+
+
+PPT
+- Slidespilot, https://www.slidespilot.com/home
+- Slidesgo, https://slidesgo.com/
+
+
+PDF
+- ChatPDF, https://www.chatpdf.com/
+- Claude Chat (Anthropic), https://claude.ai/chats
+
+
+Excel
+- ChatExcel, https://chatexcel.com/convert-en
+- Vizly,  https://vizly.fyi/app
+
+
+CSV
+- ChatCSV, https://www.chatcsv.co/dashboard
+
+
+Image Creation
+- Microsoft dashboardesigner, https://designer.microsoft.com/
+- Bing AI/Copilot (Microsoft), https://copilot.microsoft.com/\
+- Stable Diffusion, https://clipdrop.co/stable-diffusion-turbo
+- SDXL-Lightning, https://huggingface.co/spaces/radames/Real-Time-Text-to-Image-SDXL-Lightning
+- Gemini (Google), https://gemini.google.com/app
+
+
+Text to speech
+- Natural Reader, https://www.naturalreaders.com/online/
+
+
+Text to video
+- Invideo AI, https://ai.invideo.io/
+
+
+Design
+- Canva, https://www.canva.com/
+
+
+Small tools
+- Tinywow, https://tinywow.com/ 
+- Free Tiny Tools, https://freetinytools.com/
+- Commontools, https://www.commontools.org/
+- Tencet Tools, https://tool.browser.qq.com/
+- Allinone, https://allinone.tools/
+- Simplified, https://app.simplified.com/design
+
+
+Ai Tools Collection Site
+- Theres An Ai For That, https://theresanaiforthat.com/
+- Futurepedia, https://www.futurepedia.io/
+- Ai Library, https://library.phygital.plus/
