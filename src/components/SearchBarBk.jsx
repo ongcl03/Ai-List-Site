@@ -1,4 +1,4 @@
-export default function SearchBar() {
+export default function SearchBarBk() {
   return (
     <div className="max-w-lg mx-auto bg-[#1e1e1e] rounded-lg p-6">
       <div className="flex items-center bg-[#333333] rounded-md p-2">

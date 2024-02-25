@@ -1,8 +1,15 @@
 import React from "react";
-import SearchBar from "./components/SearchBarBk";
+import SearchBar from "./components/SearchBar";
+import SearchBarBk from "./components/SearchBarBk";
+import { Title } from "./components/Title";
 
 const App = () => {
-  return <h1 className="text-3xl font-bold text-blue-600">Hello world!</h1>;
+  return (
+    <div className="bg-[#273353] h-screen">
+      <Title />
+      <SearchBar />
+    </div>
+  );
 };
 
 export default App;
