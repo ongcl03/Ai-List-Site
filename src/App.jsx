@@ -1,14 +1,18 @@
 import React from "react";
 import SearchBar from "./components/SearchBar";
 import { Title } from "./components/Title";
-import Card from "./components/Card";
+import Category from "./components/Category";
+import sources from "./constants";
 
 const App = () => {
   return (
-    <div className="bg-[#273353] h-screen">
+    <div className="bg-[#273353]">
       <Title />
       <SearchBar />
-      <Card />
+
+      {sources.map((source, index) => (
+        <Category title={source.title} tools={source.tools} />
+      ))}
     </div>
   );
 };
