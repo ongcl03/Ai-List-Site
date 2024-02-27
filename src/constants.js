@@ -37,21 +37,22 @@ const sources = [
         name: "ChatGPT (OpenAI)",
         link: "https://chat.openai.com/",
         image: chatgptLogo,
-        description: "Powerful conversational AI developed by OpenAI.",
+        description:
+          "Powerful conversational AI, developed by OpenAI, revolutionizing human-computer interaction..",
       },
       {
         name: "Bing AI/Copilot (Microsoft)",
         link: "https://copilot.microsoft.com/",
-        image: bingLogo,
+        image: copilotLogo,
         description:
-          "Microsoft's AI-powered code completion tool for developers.",
+          "Microsoft's AI-powered code completion tool, enhancing productivity with 3 versatile modes.",
       },
       {
         name: "Gemini (Google)",
         link: "https://gemini.google.com/app",
         image: geminiLogo,
         description:
-          "Google's AI-based tool for creating stunning designs and visuals.",
+          "Google's most capable and general model, built to be multimodal.",
       },
       {
         name: "Claude Chat (Anthropic)",
@@ -65,21 +66,21 @@ const sources = [
         link: "https://poe.com/",
         image: poeLogo,
         description:
-          "Poe is an AI writing assistant for generating creative content.",
+          "Poe is a comprehensive LLM toolkit boasting exceptional features.",
       },
       {
         name: "Phind (Phind)",
         link: "https://phind.com/",
         image: phindLogo,
         description:
-          "Phind offers AI-driven image search capabilities for finding visual content.",
+          "Phind is an AI-powered answer engine for developers, delivering solutions in seconds.",
       },
       {
         name: "Perplexity AI (Perplexity)",
         link: "https://perplexity.ai/",
         image: perplexityLogo,
         description:
-          "Perplexity AI provides advanced AI solutions for various applications and industries.",
+          "A tool for research and citations, enhancing source credibility and integration with other tools.",
       },
     ],
   },
@@ -91,7 +92,7 @@ const sources = [
         link: "https://www.slidespilot.com/home",
         image: slidespilotLogo,
         description:
-          "Slidespilot is a platform for creating interactive presentations.",
+          "Slidespilot is an AI-powered tool designed to complement your presentation workflow.",
       },
       {
         name: "Slidesgo",
@@ -110,14 +111,21 @@ const sources = [
         link: "https://www.chatpdf.com/",
         image: chatpdfLogo,
         description:
-          "ChatPDF provides tools for managing and editing PDF documents.",
+          "AI-powered tool for PDF interaction task and get instant answers.",
       },
       {
         name: "Claude Chat (Anthropic)",
         link: "https://claude.ai/chats",
         image: claudeLogo,
         description:
-          "Anthropic's conversational AI platform for natural language processing.",
+          "Claude provides the capability to read and answer questions from PDF files.",
+      },
+      {
+        name: "Poe (Poe)",
+        link: "https://poe.com/",
+        image: poeLogo,
+        description:
+          "Enables input of PDFs into various LLM models for diverse insights",
       },
     ],
   },
@@ -167,14 +175,14 @@ const sources = [
         link: "https://copilot.microsoft.com/",
         image: copilotLogo,
         description:
-          "Microsoft's AI-powered code completion tool for developers.",
+          "Craft your desired images through interactive conversations with Copilot AI.",
       },
       {
         name: "Stable Diffusion",
         link: "https://clipdrop.co/stable-diffusion-turbo",
         image: stableDiffusionLogo,
         description:
-          "Stable Diffusion offers advanced image manipulation tools for professionals.",
+          "Produces unique photorealistic images from text and image prompts.",
       },
       {
         name: "SDXL-Lightning",
@@ -188,7 +196,7 @@ const sources = [
         link: "https://gemini.google.com/app",
         image: geminiLogo,
         description:
-          "Google's AI-based tool for creating stunning designs and visuals.",
+          "Create captivating images in seconds with Gemini Apps, for work or leisure.",
       },
     ],
   },
@@ -271,7 +279,7 @@ const sources = [
         link: "https://app.simplified.com/design",
         image: simplifiedLogo,
         description:
-          "Simplified offers tools for easy and quick design tasks for non-designers.",
+          "One-stop solution for creating, collaborating, and scaling marketing efforts.",
       },
     ],
   },
@@ -297,14 +305,14 @@ const sources = [
         link: "https://library.phygital.plus/",
         image: aiLibraryLogo,
         description:
-          "Ai Library offers a vast collection of AI algorithms and resources for research.",
+          "Extensive collection of digital illustrations, vector art, icons, and 3D graphics tools.",
       },
       {
         name: "Toolify",
         link: "https://www.toolify.ai/",
         image: toolifyLogo,
         description:
-          "Toolify provides AI-powered tools for various tasks and industries.",
+          "Your go-to directory for comprehensive AI tools, aiding businesses and individuals.",
       },
     ],
   },

@@ -14,8 +14,8 @@ function Card({ name, link, description, image }) {
             <img
               src={image}
               alt="AI Tool Image"
-              className="rounded-full mb-4"
-              style={{ aspectRatio: "150 / 150", objectFit: "cover" }}
+              className="rounded-full mb-4 bg-white"
+              style={{ aspectRatio: "150 / 150", objectFit: "contain" }}
               width="150"
               height="150"
             />
