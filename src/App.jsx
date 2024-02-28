@@ -3,6 +3,10 @@ import SearchBar from "./components/SearchBar";
 import { Title } from "./components/Title";
 import Category from "./components/Category";
 import sources from "./constants";
+import CardComponent from "./components/CardComponent";
+import CardR from "./components/CardR";
+import DeepCard from "./components/DeepCard";
+import CardLogo from "./components/CardLogo";
 
 const App = () => {
   return (
@@ -13,6 +17,13 @@ const App = () => {
       {sources.map((source, index) => (
         <Category title={source.title} tools={source.tools} />
       ))}
+      <CardComponent />
+      <CardR />
+      <DeepCard />
+      <CardLogo />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
