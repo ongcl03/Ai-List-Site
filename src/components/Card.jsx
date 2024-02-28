@@ -1,35 +1,36 @@
-import React from "react";
-
-function Card({ name, link, description, image }) {
+const Card = ({ name, link, description, image }) => {
   return (
-    <div className="border text-card-foreground w-[350px] bg-[#1A1C2C] rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-105">
-      <div className="flex flex-col space-y-1.5 p-4 bg-gradient-to-r from-[#FF5F6D] to-[#FFC371]">
-        <h3 className="whitespace-nowrap tracking-tight text-white text-2xl font-bold">
-          {name}
-        </h3>
-      </div>
-      <div className="p-4">
-        <div className="flex justify-center">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <img
-              src={image}
-              alt="AI Tool Image"
-              className="rounded-full mb-4 bg-white"
-              style={{ aspectRatio: "150 / 150", objectFit: "contain" }}
-              width="150"
-              height="150"
-            />
-          </a>
-        </div>
-        <p className="text-sm text-gray-400 mb-4">{description}</p>
+    <div
+      className="w-96 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-1.5 transform transition duration-300"
+      style={{
+        background: "linear-gradient(to bottom, #0f0c29, #302b63, #24243e)",
+      }}
+      // style={{
+      //   background: "linear-gradient(to bottom, #000428, #004e92)", // Dark blue to lighter blue gradient
+      // }}
+    >
+      <div className="p-8">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-[#4D77FF] text-white transition-transform transform hover:scale-105">
+          <img
+            className="rounded-full h-[136px] mx-auto"
+            src={image}
+            alt={name}
+          />
+        </a>
+        <h2 className="text-2xl font-bold mt-6 text-white font-poppins">
+          {name}
+        </h2>
+        <p className="mt-[5px] text-sm text-gray-300 leading-[22px] ">
+          {description}
+        </p>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <button className="mt-7 py-[12px] px-6 bg-gray-200 text-blue-800 rounded-full font-bold tracking-wider block mx-auto hover:scale-105 transform transition duration-200">
             Visit Site
           </button>
         </a>
       </div>
     </div>
   );
-}
+};
 
 export default Card;
