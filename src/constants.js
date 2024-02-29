@@ -31,7 +31,7 @@ import toolifyLogo from "./assets/toolify.svg";
 
 const sources = [
   {
-    title: "Large Language Model (Chat)",
+    title: "AI ChatBOT",
     tools: [
       {
         name: "ChatGPT (OpenAI)",

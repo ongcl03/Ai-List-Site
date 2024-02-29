@@ -6,7 +6,7 @@ import sources from "./constants";
 
 const App = () => {
   return (
-    <div className="bg-[#273353]">
+    <div className="bg-[#1a1a2e]">
       <Title />
       <SearchBar />
 

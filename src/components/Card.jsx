@@ -1,13 +1,13 @@
+import "../index.css";
+
 const Card = ({ name, link, description, image }) => {
   return (
     <div
-      className="w-96 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-1.5 transform transition duration-300"
+      className="w-[300px] sm:w-96 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-1.5 transform transition duration-300 white-shadow glowing-shadow"
       style={{
         background: "linear-gradient(to bottom, #0f0c29, #302b63, #24243e)",
+        // boxShadow: "0px 0px 15px 0px rgba(255, 255, 255, 0.2)", // Added white shadow
       }}
-      // style={{
-      //   background: "linear-gradient(to bottom, #000428, #004e92)", // Dark blue to lighter blue gradient
-      // }}
     >
       <div className="p-8">
         <a href={link} target="_blank" rel="noopener noreferrer">
@@ -17,9 +17,7 @@ const Card = ({ name, link, description, image }) => {
             alt={name}
           />
         </a>
-        <h2 className="text-2xl font-bold mt-6 text-white font-poppins">
-          {name}
-        </h2>
+        <h2 className="text-2xl font-bold mt-6 text-white">{name}</h2>
         <p className="mt-[5px] text-sm text-gray-300 leading-[22px] ">
           {description}
         </p>
