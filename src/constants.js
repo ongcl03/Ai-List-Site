@@ -29,7 +29,7 @@ import futurepediaLogo from "./assets/futurepedia.svg";
 import aiLibraryLogo from "./assets/ai-library.svg";
 import toolifyLogo from "./assets/toolify.svg";
 
-const sources = [
+export const sources = [
   {
     title: "AI ChatBOT",
     tools: [
@@ -318,4 +318,38 @@ const sources = [
   },
 ];
 
-export default sources;
+export const sourcesName = [
+  "ChatGPT (OpenAI)",
+  "Bing AI/Copilot (Microsoft)",
+  "Gemini (Google)",
+  "Claude Chat (Anthropic)",
+  "Poe (Poe)",
+  "Phind (Phind)",
+  "Perplexity AI (Perplexity)",
+  "Slidespilot",
+  "Slidesgo",
+  "ChatPDF",
+  "Claude Chat (Anthropic)",
+  "Poe (Poe)",
+  "ChatExcel",
+  "Vizly",
+  "ChatCSV",
+  "Microsoft Designer",
+  "Bing AI/Copilot (Microsoft)",
+  "Stable Diffusion",
+  "SDXL-Lightning",
+  "Gemini (Google)",
+  "Natural Reader",
+  "Invideo AI",
+  "Canva",
+  "TinyWow",
+  "Free Tiny Tools",
+  "Commontools",
+  "Tencet Tools",
+  "Allinone",
+  "Simplified",
+  "There's An Ai For That",
+  "Futurepedia",
+  "Ai Library",
+  "Toolify",
+];
