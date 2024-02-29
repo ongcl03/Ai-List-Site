@@ -7,7 +7,7 @@ const SearchBar = () => (
       <input
         type="text"
         placeholder="Search"
-        className="pl-5 pr-20 py-3 text-[16.5px] font-inter-v w-full rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="pl-5 pr-20 py-3 text-[16.5px] font-inter-v w-full rounded-full focus:outline-none focus:ring-2 focus:ring-offset-indigo-400 focus:ring-offset-2"
       />
       <button className="absolute right-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:text-gray-700">
         <IoSearch size={"1.06rem"} />
