@@ -2,7 +2,7 @@ import { IoSearch } from "react-icons/io5";
 import "../index.css";
 
 const SearchBar = () => (
-  <section className="flex justify-center items-center p-4 w-full">
+  <section className="flex justify-center items-center px-4 pt-4 w-full mb-[6px]">
     <div className="flex justify-between items-center h-[51px] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl rounded-full relative">
       <input
         type="text"
