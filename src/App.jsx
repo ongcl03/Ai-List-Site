@@ -7,14 +7,19 @@ import Footer from "./components/Footer";
 import SearchResultCard from "./components/SearchResultCard";
 
 const App = () => {
-  const [filteredSources, setFilteredSources] = useState();
+  const [filteredSources, setFilteredSources] = useState(sources);
+
+  // Function lifted up from SearchBar to pass down to SearchBar and handle Category state
+  const handleSearch = (searchArray) => {
+    setFilteredSources(searchArray);
+  };
 
   return (
     <div className="bg-[#1a1a2e]">
       <Title />
-      <SearchBar />
+      <SearchBar onSearch={handleSearch} />
 
-      {sources.map((source) => (
+      {filteredSources.map((source) => (
         <Category
           key={source.title}
           title={source.title}

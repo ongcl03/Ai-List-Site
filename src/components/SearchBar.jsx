@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { sources } from "../constants";
 import { includes } from "lodash";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
   const [searchValue, setSearchValue] = useState("");
   const inputRef = useRef();
 
@@ -13,16 +13,23 @@ const SearchBar = () => {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    const inputValue = inputRef.current.value;
+    const inputValue = inputRef.current.value.toLowerCase();
 
-    const searchArray = sources.filter((source) => {
-      return source.tools.some((tool) =>
-        tool.name.toLowerCase().includes(inputValue.toLowerCase())
-      );
-    });
+    // Do the searching through looping the sources
+    const searchArray = sources
+      .map((source) => {
+        const matchingTools = source.tools.filter((tool) =>
+          tool.name.toLowerCase().includes(inputValue)
+        );
 
-    console.log(searchArray);
-    // console.log(list.filter((num) => num === inputValue));
+        return matchingTools.length > 0
+          ? { ...source, tools: matchingTools }
+          : null;
+      })
+      .filter(Boolean);
+
+    // runs the onSearch (pass down by App), applying the lifting state up trick
+    onSearch(searchArray);
   };
 
   return (
