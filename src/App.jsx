@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import { Title } from "./components/Title";
 import Category from "./components/Category";
 import sources from "./constants";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       {sources.map((source, index) => (
         <Category title={source.title} tools={source.tools} />
       ))}
+      <Footer />
     </div>
   );
 };
