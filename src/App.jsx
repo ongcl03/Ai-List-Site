@@ -5,6 +5,8 @@ import Category from "./components/Category";
 import { sources } from "./constants";
 import Footer from "./components/Footer";
 import SearchResultCard from "./components/SearchResultCard";
+import "./index.css";
+import PageNotFound from "./components/PageNotFound";
 
 const App = () => {
   const [filteredSources, setFilteredSources] = useState(sources);
@@ -26,6 +28,8 @@ const App = () => {
           tools={source.tools}
         />
       ))}
+
+      {filteredSources.length === 0 && <PageNotFound />}
       <Footer />
     </div>
   );
