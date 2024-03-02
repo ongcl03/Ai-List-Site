@@ -172,7 +172,7 @@ export const sources = [
           "Microsoft Designer provides tools for creating graphics and designs.",
       },
       {
-        name: "Bing AI/Copilot (Microsoft)",
+        name: "Copilot",
         link: "https://copilot.microsoft.com/",
         image: copilotLogo,
         description:

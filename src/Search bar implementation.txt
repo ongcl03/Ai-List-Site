@@ -1,0 +1,33 @@
+Implementation of search bar with the search results
+
+Search bar focus
+- When focus on the search bar, but empty input, the search results will not be shown
+
+- When focus on the search bar with some input text, the search results will be shown
+  - When input has matched some data in the sources, it will only show at most 3 search results
+    - and the input will be autocompleted with the first search result
+    - clicking at the search results, will also autocomplete the input with the clicked search result and perform the searching function and render the category sections with the search results
+
+  - When input has not matched some data in the sources, it will not show the search results
+  - Clicking enter and the search icon will start the searching function and render the category sections with the search results
+
+
+
+- When not focusing on the search bar, the search result will not be shown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
