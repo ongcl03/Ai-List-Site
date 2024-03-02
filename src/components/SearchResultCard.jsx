@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 
-const SearchResultCard = () => {
+const SearchResultCard = ({ searchValue }) => {
   return (
     <div className="flex justify-center items-center w-full mb-[5px]">
       {" "}
@@ -10,7 +10,7 @@ const SearchResultCard = () => {
         {" "}
         {/* Adjusted border color and shadow */}
         <p className="pl-5 pr-20 py-3 text-[16.5px] font-inter-v w-full cursor-pointer">
-          Search Result
+          {searchValue}
         </p>
       </div>
     </div>

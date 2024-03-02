@@ -3,16 +3,14 @@ import "../index.css";
 import { useRef, useState } from "react";
 import { sources } from "../constants";
 import { includes } from "lodash";
+import SearchResultCard from "./SearchResultCard";
 
-const SearchBar = ({ onSearch }) => {
-  const [searchValue, setSearchValue] = useState("");
+const SearchBar = ({ onSearch, handleSearchResult, setIsFocused }) => {
   const inputRef = useRef();
 
   // const list = ["1", "2", "3"];
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-
+  const searchSource = () => {
     const inputValue = inputRef.current.value.toLowerCase();
 
     // Do the searching through looping the sources
@@ -28,18 +26,33 @@ const SearchBar = ({ onSearch }) => {
       })
       .filter(Boolean);
 
+    return searchArray;
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
     // runs the onSearch (pass down by App), applying the lifting state up trick
+    const searchArray = searchSource();
+    console.log(searchArray);
     onSearch(searchArray);
   };
 
+  const handleOnChange = () => {
+    handleSearchResult(searchSource());
+  };
+
   return (
-    <section className="flex justify-center items-center px-4 pt-4 w-full mb-[6px]">
+    <section className="flex justify-center items-center px-4 pt-4 w-full mb-[6px] flex-col">
       <div className="h-[51px] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl rounded-full relative">
         <form
           onSubmit={handleSearch}
           className="flex justify-center items-center"
         >
           <input
+            onChange={handleOnChange}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
             ref={inputRef}
             type="text"
             placeholder="Search"

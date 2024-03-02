@@ -17,6 +17,7 @@ import stableDiffusionLogo from "./assets/stability-ai.svg";
 import sdxlLightningLogo from "./assets/huggingface.svg";
 import textToSpeechLogo from "./assets/natural-reader.svg";
 import textToVideoLogo from "./assets/invideo.svg";
+import clipchampLogo from "./assets/clipchamp.svg";
 import canvaLogo from "./assets/canva.svg";
 import tinywowLogo from "./assets/tinywow.svg";
 import freetinytoolsLogo from "./assets/freetinytools.svg";
@@ -34,49 +35,49 @@ export const sources = [
     title: "AI ChatBOT",
     tools: [
       {
-        name: "ChatGPT (OpenAI)",
+        name: "ChatGPT",
         link: "https://chat.openai.com/",
         image: chatgptLogo,
         description:
           "Powerful conversational AI, developed by OpenAI, revolutionizing human-computer interaction..",
       },
       {
-        name: "Bing AI/Copilot (Microsoft)",
+        name: "Bing AI/Copilot",
         link: "https://copilot.microsoft.com/",
         image: copilotLogo,
         description:
           "Microsoft's AI-powered code completion tool, enhancing productivity with 3 versatile modes.",
       },
       {
-        name: "Gemini (Google)",
+        name: "Gemini",
         link: "https://gemini.google.com/app",
         image: geminiLogo,
         description:
           "Google's most capable and general model, built to be multimodal.",
       },
       {
-        name: "Claude Chat (Anthropic)",
+        name: "Claude",
         link: "https://claude.ai/chats",
         image: claudeLogo,
         description:
           "Anthropic's conversational AI platform for natural language processing.",
       },
       {
-        name: "Poe (Poe)",
+        name: "Poe",
         link: "https://poe.com/",
         image: poeLogo,
         description:
           "Poe is a comprehensive LLM toolkit boasting exceptional features.",
       },
       {
-        name: "Phind (Phind)",
+        name: "Phind",
         link: "https://phind.com/",
         image: phindLogo,
         description:
           "Phind is an AI-powered answer engine for developers, delivering solutions in seconds.",
       },
       {
-        name: "Perplexity AI (Perplexity)",
+        name: "Perplexity AI",
         link: "https://perplexity.ai/",
         image: perplexityLogo,
         description:
@@ -85,7 +86,7 @@ export const sources = [
     ],
   },
   {
-    title: "PPT",
+    title: "Slides Generator",
     tools: [
       {
         name: "Slidespilot",
@@ -104,7 +105,7 @@ export const sources = [
     ],
   },
   {
-    title: "PDF",
+    title: "PDF Summarizer",
     tools: [
       {
         name: "ChatPDF",
@@ -114,7 +115,7 @@ export const sources = [
           "AI-powered tool for PDF interaction task and get instant answers.",
       },
       {
-        name: "Claude Chat (Anthropic)",
+        name: "Claude",
         link: "https://claude.ai/chats",
         image: claudeLogo,
         description:
@@ -130,7 +131,7 @@ export const sources = [
     ],
   },
   {
-    title: "Excel",
+    title: "Excel Mannipulation & Visualization",
     tools: [
       {
         name: "ChatExcel",
@@ -149,7 +150,7 @@ export const sources = [
     ],
   },
   {
-    title: "CSV",
+    title: "CSV Mannipulation",
     tools: [
       {
         name: "ChatCSV",
@@ -192,7 +193,7 @@ export const sources = [
           "SDXL-Lightning provides real-time text-to-image generation capabilities.",
       },
       {
-        name: "Gemini (Google)",
+        name: "Gemini",
         link: "https://gemini.google.com/app",
         image: geminiLogo,
         description:
@@ -209,6 +210,13 @@ export const sources = [
         image: textToSpeechLogo,
         description:
           "Natural Reader converts text into spoken words with natural voices.",
+      },
+      {
+        name: "Clipchamp",
+        link: "https://app.clipchamp.com/",
+        image: clipchampLogo,
+        description:
+          "Clipchamp's AI text to speech generator supports over 80 different languages.",
       },
     ],
   },
@@ -233,6 +241,13 @@ export const sources = [
         image: canvaLogo,
         description:
           "Canva offers a wide range of design tools and templates for creatives.",
+      },
+      {
+        name: "Microsoft Designer",
+        link: "https://designer.microsoft.com/",
+        image: microsoftDesignerLogo,
+        description:
+          "Microsoft Designer provides tools for creating graphics and designs.",
       },
     ],
   },
