@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }) => {
     } else {
       setFilteredResults([]);
     }
-  }, [searchInput, searchInput]);
+  }, [searchInput]);
 
   const handleInput = (e) => {
     setSearchInput(e.target.value);
