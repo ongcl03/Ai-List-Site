@@ -4,14 +4,12 @@ import { Title } from "./components/Title";
 import Category from "./components/Category";
 import { sources } from "./constants";
 import Footer from "./components/Footer";
-import SearchResultCard from "./components/SearchResultCard";
-import "./index.css";
 import PageNotFound from "./components/PageNotFound";
+import "./index.css";
 
 const App = () => {
   const [filteredSources, setFilteredSources] = useState(sources);
 
-  // Function lifted up from SearchBar to pass down to SearchBar and handle Category state
   const handleSearch = (searchArray) => {
     setFilteredSources(searchArray);
   };
@@ -20,16 +18,17 @@ const App = () => {
     <div className="bg-[#1a1a2e]">
       <Title />
       <SearchBar onSearch={handleSearch} />
-
-      {filteredSources.map((source) => (
-        <Category
-          key={source.title}
-          title={source.title}
-          tools={source.tools}
-        />
-      ))}
-
-      {filteredSources.length === 0 && <PageNotFound />}
+      {filteredSources.length > 0 ? (
+        filteredSources.map((source) => (
+          <Category
+            key={source.title}
+            title={source.title}
+            tools={source.tools}
+          />
+        ))
+      ) : (
+        <PageNotFound />
+      )}
       <Footer />
     </div>
   );

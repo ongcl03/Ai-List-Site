@@ -32,18 +32,15 @@ const SearchBar = ({ onSearch }) => {
     onSearch(searchSource()[0]);
   };
 
-  // Search the source to match the current input value
-  const searchSource = () => {
+  // Function to filter tools based on a condition
+  const filterTools = (condition) => {
     let matchedResults = [];
 
-    // Do the searching through looping the sources
     const searchArray = sources
       .map((source) => {
-        const matchingTools = source.tools.filter((tool) =>
-          tool.name.toLowerCase().includes(searchInput.toLowerCase())
-        );
+        const matchingTools = source.tools.filter(condition);
 
-        // Push the filter tool object into the matchedResults array
+        // Concat filter tool object into the matchedResults array (so it's a flat array)
         matchedResults = matchedResults.concat(matchingTools);
 
         return matchingTools.length > 0
@@ -55,21 +52,22 @@ const SearchBar = ({ onSearch }) => {
     return [searchArray, matchedResults];
   };
 
+  // Search the source to match the current input value
+  const searchSource = () => {
+    const condition = (tool) =>
+      tool.name.toLowerCase().includes(searchInput.toLowerCase());
+
+    // condition here is the whole code in line 58, and it will do the filter in line 41
+    return filterTools(condition);
+  };
+
   const handleSelect = (name) => {
     setSearchInput(name); // Set the search input to the name of the tool clicked
     setIsFocused(false); // Remove focus from the search bar
 
     // Filter the sources based on the name and call the onSearch function with this filtered data
-    const searchArray = sources
-      .map((source) => {
-        const matchingTools = source.tools.filter(
-          (tool) => tool.name.toLowerCase() === name.toLowerCase()
-        );
-        return matchingTools.length > 0
-          ? { ...source, tools: matchingTools }
-          : null;
-      })
-      .filter(Boolean);
+    const condition = (tool) => tool.name.toLowerCase() === name.toLowerCase();
+    const [searchArray, _] = filterTools(condition);
 
     onSearch(searchArray); // Perform the search with the filtered data
   };
